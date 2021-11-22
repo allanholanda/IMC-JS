@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo IMC</title>
+    <link rel ="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Calculo IMC</h1>
+    </header>
+
+    <section>
+        <div> 
+            <p>Nome:
+                <input type="text" name = "name" id = "txtnome">
+            </p>
+            <p>Idade:
+                <input type="number" name = "idade" id = "txtidade">
+            </p>
+            <p>Peso:
+                <input type="number" name = "peso" id = "txtpeso">
+            </p>
+            <p>Altura:
+                <input type="number" name = "altura" id = "txtaltura">
+            </p>
+            <p>
+                <input type = "button" value = "Calcular IMC" onclick = "imc()">
+            </p>
+        </div>
+        <div>
+            <h2>BANCO DE DADOS:</h2>
+            <select name = 'imc' id = 'selimc' size = "10">     
+                <optgroup label = "NOME │ IDADE │ PESO │ ALTURA │ IMC"></optgroup>
+                <option></option>
+            </select> 
+            <p>
+                <input type = "button" value = "Finalizar" onclick = 'finalizar()'>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; allanholanda</p>
+    </footer>
+
+    <script src = "script.js"></script>
+</body>
+</html>
